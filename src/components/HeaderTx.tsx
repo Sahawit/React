@@ -1,7 +1,10 @@
-import ButtonAdd from "./ButtonAdd";
+import React from 'react';
 
-function HeaderTx({ name, fontSize, status}: {name: string, fontSize:string, status:boolen} ) {
-    return (
+// ถ้าไม่ได้ใช้ ButtonAdd ในไฟล์นี้ ให้ลบ import ออกได้เลยครับ
+// import ButtonAdd from "./ButtonAdd"; 
+
+function HeaderTx({ name, fontSize, status }: { name: string, fontSize: string, status: boolean }) {
+  return (
     <>
       <h1
         className={status ? "green-txt" : "red-txt"}

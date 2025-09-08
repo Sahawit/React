@@ -4,7 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 // import ButtonAdd from './components/ButtonAdd' // ถ้าไม่ได้ใช้คอมโพเนนต์นี้ สามารถลบออกได้
 import HeaderTx from './components/HeaderTx'
-import MemberList from './components/LIst_Member' // นำเข้า MemberList Component
+import MemberList from './components/List_Member' // นำเข้า MemberList Component
 
 function App() {
   type Member = {
