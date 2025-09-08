@@ -4,12 +4,13 @@ import './index.css'
 import App from './App.tsx'
 import TodoApp from './components/todolist.tsx'
 import GPAApp from './components/Grade.tsx'
-
+import TodoListHookFrom from './components/TodoListFrom.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     {/*<App/>*/}
     {/*<TodoApp />*/}
-    <GPAApp />
+    {/*{<GPAApp />*/}
+    <TodoListHookFrom  />
   </StrictMode>,
 )
