@@ -38,46 +38,36 @@ function App() {
     { nameTH: "เบบี้", nameEN: "baby", heightCm: 160, age: 18, imageUrl: "https://www.nautiljon.com/images/people/02/07/baby_saja_saja_boys_212270.webp", group: "Saja" }
   ];
 
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState(0)
 
   return (
     <>
-      <HeaderTx name="Computer Science" fontSize={62} status={false} />
-      <HeaderTx name="Hello World" fontSize={40} status={true} />
-
-      <div style={{ padding: '20px' }}>
-        {/* ใช้ MemberList Component สำหรับวง BUS */}
-        <MemberList members={ALL_MEMBERS} groupName="BUS" />
-
-        {/* ใช้ MemberList Component สำหรับวง Saja */}
-        <MemberList members={ALL_MEMBERS} groupName="Saja" />
-      </div>
-
-      <div style={{ textAlign: 'center', marginTop: '30px' }}>
-        <a href="https://vite.dev" target="_blank" rel="noopener noreferrer">
-          <img src={viteLogo} className="logo" alt="Vite logo" style={{ height: '6em', padding: '1.5em', willChange: 'filter', transition: 'filter 300ms' }} />
+      <div>
+        <a href="https://vitejs.dev" target="_blank">
+          <img src={viteLogo} className="logo" alt="Vite logo" />
         </a>
-        <a href="https://react.dev" target="_blank" rel="noopener noreferrer">
-          <img src={reactLogo} className="logo react" alt="React logo" style={{ height: '6em', padding: '1.5em', willChange: 'filter', transition: 'filter 300ms' }} />
+        <a href="https://react.dev" target="_blank">
+          <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
-
-      <h1 style={{ textAlign: 'center' }}>Vite + React</h1>
-
-      <div className="card" style={{ textAlign: 'center', marginTop: '20px' }}>
-        <button onClick={() => setCount((c) => c + 1)}>
-          count is {count}
-        </button>
+      <h1>Vite + React</h1>
+      <div className="card">
+        {/* <ButtonAdd setCount={setCount} count={count} /> */}
         <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
+          count is {count}
         </p>
       </div>
-
-      <p className="read-the-docs" style={{ textAlign: 'center', color: '#888' }}>
+      <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
+      
+      {/* 24 and 30 are number types, but fontSize is string type. So change to "24" and "30" */}
+      <HeaderTx name="Test" fontSize="24" status={true} />
+      <HeaderTx name="TEST" fontSize="30" status={false} />
+
+      <MemberList members={ALL_MEMBERS} groupName="BUS" />
     </>
-  );
+  )
 }
 
-export default App;
+export default App
