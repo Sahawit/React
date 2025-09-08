@@ -1,4 +1,3 @@
-import React from 'react';
 
 // Define the type for the props explicitly
 interface ButtonAddProps {

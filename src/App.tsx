@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
@@ -38,8 +37,6 @@ function App() {
     { nameTH: "เบบี้", nameEN: "baby", heightCm: 160, age: 18, imageUrl: "https://www.nautiljon.com/images/people/02/07/baby_saja_saja_boys_212270.webp", group: "Saja" }
   ];
 
-  const [count, setCount] = useState(0)
-
   return (
     <>
       <div>
@@ -53,9 +50,6 @@ function App() {
       <h1>Vite + React</h1>
       <div className="card">
         {/* <ButtonAdd setCount={setCount} count={count} /> */}
-        <p>
-          count is {count}
-        </p>
       </div>
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
